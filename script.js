@@ -3,10 +3,8 @@ const circle = btn.querySelector("circle");
 const totalLength = 126;
 
 window.addEventListener("scroll", (e) => {
-
-
   const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
-  const scrolled = 100 - (scrollTop / (scrollHeight - clientHeight) * 100);
+  const scrolled = 100 - (scrollTop / (scrollHeight - clientHeight)) * 100;
 
   circle.style.strokeDashoffset = scrolled;
 
